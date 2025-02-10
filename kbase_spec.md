@@ -5,7 +5,7 @@ This document outlines the specifications for a Go-based application that builds
 ## 1. Core Functionality:
 
 * **Data Ingestion:**
-    * **Manual Upload:** Users can upload PDF, DOCX, TXT, and potentially other formats of academic articles, official reports, and research literature. The application should handle various file formats and character encodings gracefully.
+    * **Manual Upload:** Users can upload HTML, PDF, DOCX, TXT, and potentially other formats of academic articles, official reports, and research literature. The application should handle various file formats and character encodings gracefully.
     * **Web Search (Scheduled):** The application performs scheduled (daily/weekly) web searches for new research literature based on user-defined keywords, topics, or search queries. It should integrate with search engine APIs (e.g., Google Scholar API, or custom web scraping with careful respect for `robots.txt` and usage limits) to identify potential sources.
     * **Metadata Extraction:** Upon ingestion, the application automatically extracts rich metadata from the sources, including:
         * Title
